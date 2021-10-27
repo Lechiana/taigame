@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/*Font Thai= font-family: 'Sriracha', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000000;
+    font-family: 'Sriracha', cursive;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+main{}

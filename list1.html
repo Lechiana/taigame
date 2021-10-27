@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sword Art Online: Alicization Lycoris</title>
+
+    <!-- css bootstrap -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./glide.core.min.css">
+    <link rel="stylesheet" href="./glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./list1-style.css">
+
+     <!-- update the version number as needed -->
+     <script defer src="/__/firebase/7.18.0/firebase-app.js"></script>
+     <!-- include only the Firebase features as you need -->
+     <script defer src="/__/firebase/7.18.0/firebase-auth.js"></script>
+     <script defer src="/__/firebase/7.18.0/firebase-database.js"></script>
+     <script defer src="/__/firebase/7.18.0/firebase-messaging.js"></script>
+     <script defer src="/__/firebase/7.18.0/firebase-storage.js"></script>
+     <!-- initialize the SDK after all desired features are loaded -->
+     <script defer src="/__/firebase/init.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ================================ Header Area ==================================== -->
+    <header>
+        <nav>
+            <span class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <div class="logo">
+                <span>Rabbit Game</span>
+            </div>
+
+            <ul class="js-menu">
+                <li><a href="./index.html">หน้าแรก</a></li>
+                <li><a href="#">ทั้งหมด</a></li>
+                <li><a href="#">แนะนำ</a></li>
+                <li><a href="./login.html">เข้าสู้ระบบ</a></li>
+                <li><a href="./register.html">สมัครสมาชิก</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ================================ End Header Area ==================================== -->
+
+    <!-- ================================ Carousel Area ==================================== -->
+    <div data-aos="zoom-in">
+        <div class="container">
+            <div class="glide carousel">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="./image/list1/1.jpg"></li>
+                        <li class="glide__slide"><img src="./image/list1/2.jpg"></li>
+                        <li class="glide__slide"><img src="./image/list1/3.jpg"></li>
+                        <li class="glide__slide"><img src="./image/list1/4.jpg"></li>
+                        <li class="glide__slide"><img src="./image/list1/5.jpg"></li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                            class="fas fa-chevron-left arrow"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                            class="fas fa-chevron-right arrow"></i></button>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                    <button class="glide__bullet" data-glide-dir="=4"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================================ End Carousel Area ==================================== -->
+
+    <!-- ================================ Main Area ==================================== -->
+    <main class="container">
+
+    </main>
+    <!-- ================================ End Main Area ==================================== -->
+
+    <!-- ================================ Footer Area ==================================== -->
+
+    <footer>
+        <div class="container flex">
+            <h1>Welcome</h1>
+        </div>
+    </footer>
+
+    <!-- ================================ End Footer Area ==================================== -->
+    <script src="./index-script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        AOS.init();
+        const config = {
+            type: "carousel",
+            perView: 1,
+            breakpoints: {
+                1024: {
+                    perView: 1
+                }
+            }
+        }
+        new Glide(".carousel", config).mount()
+    </script>
+
+</body>
+
+</html>

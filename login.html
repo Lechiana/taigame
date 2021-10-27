@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงชื่อเข้าใช้บัญชี Rabbit Game</title>
+
+    <!-- css bootstrap -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./login-style.css">
+
+     <!-- update the version number as needed -->
+     <script defer src="/__/firebase/7.18.0/firebase-app.js"></script>
+     <!-- include only the Firebase features as you need -->
+     <script defer src="/__/firebase/7.18.0/firebase-auth.js"></script>
+     <script defer src="/__/firebase/7.18.0/firebase-database.js"></script>
+     <script defer src="/__/firebase/7.18.0/firebase-messaging.js"></script>
+     <script defer src="/__/firebase/7.18.0/firebase-storage.js"></script>
+     <!-- initialize the SDK after all desired features are loaded -->
+     <script defer src="/__/firebase/init.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ================================ Header Area ==================================== -->
+    <header>
+        <nav>
+            <span class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <div class="logo">
+                <span>Rabbit Game</span>
+            </div>
+    
+            <ul class="js-menu">
+                <li><a href="./index.html">หน้าแรก</a></li>
+                <li><a href="#">ทั้งหมด</a></li>
+                <li><a href="#">แนะนำ</a></li>
+                <li><a href="./login.html">เข้าสู้ระบบ</a></li>
+                <li><a href="./register.html">สมัครสมาชิก</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================================ End Header Area ==================================== -->
+
+    <main class="login">
+        <div class="wrapper">
+            <div class="herder-login">
+                <h2>Rabbit Game</h2>
+            </div>
+
+
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label class="text2">เข้าสู่ระบบด้วยบัญชี Rabbit Game</label>
+                        <input type="email" class="form-control" placeholder="อีเมล" required>
+                    </div>
+                    <div class="form-group2">
+                        <input type="password" placeholder="รหัสผ่าน" class="form-control" id="password" required>
+                        <span class="eye">
+                            <i class="fas fa-eye" id="eye" onclick="toggle()"></i>
+                        </span>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label text" for="exampleCheck1">จำฉันไว้</label>
+                        <span><a href="#" class="span text">ลืมรหัสผ่าน</a></span>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn button text3">ลงชื่อเข้าใช้ทันที</button>
+                    </div>
+                </form>
+            </div>
+            <div class="text2">
+                <p>นโยบายความเป็นส่วนตัว</p>
+            </div>
+            <div class="log-register">
+                <div>
+                    <p class="text">ยังไม่มีบัญชี RabbitGame หรือ <a href="./register.html" class="text2">ลงทะเบียน</a>
+                    </p>
+                    <p class="text">ย้อนกลับไปที่ <a href="#" class="text2">ตัวเลือกการลงทะเบียนทั้งหมด</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+  <!-- ================================ Footer Area ==================================== -->
+
+  <footer>
+    <div class="container flex">
+        <h1>Welcome</h1>
+    </div>
+</footer>
+
+  <!-- ================================ End Footer Area ==================================== -->
+
+  <script src="./login.js"></script>
+  <script src="./index-script.js"></script>
+  
+</body>
+
+</html>

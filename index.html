@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabbit Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./glide.core.min.css">
+    <link rel="stylesheet" href="./glide.theme.min.css">
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.18.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.18.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.18.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.18.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.18.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <div class="logo">
+                <span>Rabbit Game</span>
+            </div>
+    
+            <ul class="js-menu">
+                <li><a href="./index.html">หน้าแรก</a></li>
+                <li><a href="#">ทั้งหมด</a></li>
+                <li><a href="#">แนะนำ</a></li>
+                <li><a href="./login.html">เข้าสู้ระบบ</a></li>
+                <li><a href="./register.html">สมัครสมาชิก</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div data-aos="zoom-in">
+        <div class="container">
+            <div class="glide carousel">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="./image/carousel/col-1.jpg"></li>
+                        <li class="glide__slide"><img src="./image/carousel/col-22.png"></li>
+                        <li class="glide__slide"><img src="./image/carousel/col-33.jpg"></li>
+                        <li class="glide__slide"><img src="./image/carousel/col-4.jpg"></li>
+                        <li class="glide__slide"><img src="./image/carousel/col-5.jpg"></li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                            class="fas fa-chevron-left arrow"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                            class="fas fa-chevron-right arrow"></i></button>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                    <button class="glide__bullet" data-glide-dir="=4"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main data-aos="zoom-in-up">
+        <div class="main">
+            <div class="icon">
+                <div>
+                    <img class="icon-gift" src="image/gift-2.png">
+                </div>
+                <div class="text1">
+                    <span>เกมฟรี</span>
+                </div>
+            </div>
+            <div class="container2 flex">
+                <div class="flex-item">
+                    <a href="#">
+                        <img class="image-free" src="image/เกมฟรี/Honkai Impact 3.jpg">
+                    </a>
+                    <p class="text-free">Honkai Impact 3</p>
+                    <p class="small">ฟรีแล้ววันนี้</p>
+                </div>
+                <div class="flex-item">
+                    <a href="#">
+                        <img class="image-free" src="image/เกมฟรี/KurtzPel.jpg">
+                    </a>
+                    <p class="text-free">KurtzPel</p>
+                    <p class="small">ฟรีแล้ววันนี้</p>
+                </div>
+                <div class="flex-item">
+                    <a href="#">
+                        <img class="image-free" src="image/เกมฟรี/Apex Legends™.jpg">
+                    </a>
+                    <p class="text-free">Apex Legends™</p>
+                    <p class="small">ฟรีแล้ววันนี้</p>
+                </div>
+                <div class="flex-item">
+                    <a href="#">
+                        <img class="image-free" src="image/เกมฟรี/Dota 2.jpg">
+                    </a>
+                    <p class="text-free">Dota 2</p>
+                    <p class="small">ฟรีแล้ววันนี้</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main data-aos="fade-up">
+        <div class="main2">
+            <div class="icon">
+                <div class="text1">
+                    <span>เกมออกใหม่</span>
+                </div>
+            </div>
+            <div class="container3 flex">
+                <div class="flex-item2">
+                    <a href="./list1.html" data-target="#exampleModal">
+                        <img class="image-free2" src="image/new game/SWORD ART ONLINE Alicization Lycoris.jpg">
+                    </a>
+                    <p class="text-free22">Sword Art Online: Alicization Lycoris</p>
+                    <p class="small2">13 ก.ค. ที่ 22:00</p>
+                    <p class="text-free3">US$ 64.2</p>
+                </div>
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/new game/Cyberpunk 2077.jpg">
+                    </a>
+                    <p class="text-free22">Cyberpunk 2077</p>
+                    <p class="small2">15 ก.ค. ที่ 22:00</p>
+                    <p class="text-free3">US$ 64.2</p>
+                </div>
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/new game/Horizon Zero Dawn™ Complete Edition.jpg">
+                    </a>
+                    <p class="text-free22">Horizon Zero Dawn™ Complete Edition</p>
+                    <p class="small2">17 ก.ค. ที่ 22:00</p>
+                    <p class="text-free3">US$ 64.2</p>
+                </div>
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/new game/Assassin's Creed Valhalla.jpg">
+                    </a>
+                    <p class="text-free22">Assassin's Creed Valhalla</p>
+                    <p class="small2">16 ก.ค. ที่ 22:00</p>
+                    <p class="text-free3">US$ 64.2</p>
+                </div>
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/new game/Zombie Army 4 Dead War.jpg">
+                    </a>
+                    <p class="text-free22">Zombie Army 4 Dead War</p>
+                    <p class="small2">10 ก.ค. ที่ 22:00</p>
+                    <p class="text-free3">US$ 64.2</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main data-aos="zoom-in-up">
+        <div class="main3">
+            <div class="icon">
+                <div class="text1">
+                    <span>เฉลิมฉลองสัปดาห์สาวสวย</span>
+                </div>
+            </div>
+            <div class="container3 flex">
+                <img class="image-nn" src="./image/Shibuya Rin.jpg">
+
+            </div>
+        </div>
+    </main>
+
+    <main data-aos="fade-up" data-aos-delay="300">
+        <div class="main2">
+            <div class="icon">
+                <div class="text1">
+                    <span>เกมขายดี</span>
+                </div>
+            </div>
+            <div class="container3 flex">
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/ขายดี/Hyperdimension Neptunia Re;Birth3.jpg">
+                    </a>
+                    <p class="text-free22">Hyperdimension Neptunia Re;Birth 3</p>
+                    <p class="small2">13 ก.ค. ที่ 22:00</p>
+                    <p class="text-free2">US$ 64.2</p>
+                </div>
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/ขายดี/Jump Force.jpg">
+                    </a>
+                    <p class="text-free22">Jump Force</p>
+                    <p class="small2">15 ก.ค. ที่ 22:00</p>
+                    <p class="text-free2">US$ 64.2</p>
+                </div>
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/ขายดี/Naruto Shippuden Ultimate Ninja Storm 4.jpg">
+                    </a>
+                    <p class="text-free22">Naruto Shippuden Ninja Storm 4</p>
+                    <p class="small2">17 ก.ค. ที่ 22:00</p>
+                    <p class="text-free2">US$ 64.2</p>
+                </div>
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/ขายดี/One Piece Pirate Warriors 4.jpg">
+                    </a>
+                    <p class="text-free22">One Piece Pirate Warriors 4</p>
+                    <p class="small2">16 ก.ค. ที่ 22:00</p>
+                    <p class="text-free2">US$ 64.2</p>
+                </div>
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/ขายดี/Tales of Zestiria.jpg">
+                    </a>
+                    <p class="text-free22">Tales of Zestiria</p>
+                    <p class="small2">10 ก.ค. ที่ 22:00</p>
+                    <p class="text-free2">US$ 64.2</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main data-aos="fade-up">
+        <div class="main2">
+            <div class="icon">
+                <div class="text1">
+                    <span>เกมลดราคา</span>
+                </div>
+            </div>
+            <div class="container3 flex">
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/ลดราคา/Grand Theft Auto V.jpg">
+                    </a>
+                    <p class="text-free22">Grand Theft Auto V</p>
+                    <p class="small2">13 ก.ค. ที่ 22:00 - 23 ก.ค. ที่ 22:00</p>
+                    <p class="text-free2">US$ 24.2</p>
+                </div>
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/ลดราคา/Playerunknown's Battlegrounds.jpg">
+                    </a>
+                    <p class="text-free22">Playerunknown's Battlegrounds</p>
+                    <p class="small2">15 ก.ค. ที่ 22:00 - 25 ก.ค. ที่ 22:00</p>
+                    <p class="text-free2">US$ 24.2</p>
+                </div>
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/ลดราคา/The Crew™ 2.jpg">
+                    </a>
+                    <p class="text-free22">The Crew™ 2</p>
+                    <p class="small2">17 ก.ค. ที่ 22:00 - 17 ก.ค. ที่ 22:00</p>
+                    <p class="text-free2">US$ 24.2</p>
+                </div>
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/ลดราคา/The Sims™ 4.jpg">
+                    </a>
+                    <p class="text-free22">The Sims™ 4</p>
+                    <p class="small2">16 ก.ค. ที่ 22:00 - 16 ก.ค. ที่ 22:00</p>
+                    <p class="text-free2">US$ 24.2</p>
+                </div>
+                <div class="flex-item2">
+                    <a href="#">
+                        <img class="image-free2" src="image/ลดราคา/Atelier Ryza Ever Darkness & the Secret Hideout.jpg">
+                    </a>
+                    <p class="text-free22">Atelier Ryza</p>
+                    <p class="small2">10 ก.ค. ที่ 22:00 - 10 ก.ค. ที่ 22:00</p>
+                    <p class="text-free2">US$ 24.2</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+
+    <footer>
+        <div class="container flex">
+            <h1>Welcome</h1>
+        </div>
+    </footer>
+
+
+    <script src="index-script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+            // // The Firebase SDK is initialized and available here!
+            //
+            // firebase.auth().onAuthStateChanged(user => { });
+            // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+            // firebase.messaging().requestPermission().then(() => { });
+            // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+            //
+            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+            try {
+                let app = firebase.app();
+                let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+                document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+            } catch (e) {
+                console.error(e);
+                document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+            }
+        });
+        AOS.init();
+        const config = {
+            autoplay: 2300,
+            type: "carousel",
+            perView: 1,
+            breakpoints: {
+                1024: {
+                    perView: 1
+                }
+            }
+        }
+        new Glide(".carousel", config).mount()
+    </script>
+</body>
+
+</html>
